@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ArrStalledHandler</Name>
+  <Repository>tommythebeast/arrstalledhandler</Repository>
+  <Registry>https://hub.docker.com/r/tommythebeast/arrstalledhandler</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/tommyvange/ArrStalledHandler/issues</Support>
+  <Project>https://github.com/tommyvange/ArrStalledHandler</Project>
+  <Overview>ArrStalledHandler is a Python-based script designed to handle stalled downloads in Radarr and Sonarr by taking actions such as removing, blocklisting, or blocklisting and re-searching for the affected items.</Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/tommyvange/unraid-templates/refs/heads/main/ArrStalledHandler/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1732231074</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Radarr URL" Target="RADARR_URL" Default="http://192.168.1.100:7878" Mode="" Description="The base URL for Radarr (ex. http://192.168.1.100:7878). Leave empty to disable Radarr-functionality." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Radarr API Key" Target="RADARR_API_KEY" Default="" Mode="" Description="The API key for Radarr (found in Radarr settings)." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Sonarr URL" Target="SONARR_URL" Default="http://192.168.1.100:8989" Mode="" Description="The base URL for Sonarr (ex. http://192.168.1.100:8989). Leave empty to disable Sonarr-functionality." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Sonarr API Key" Target="SONARR_API_KEY" Default="" Mode="" Description="The API key for Sonarr (found in Sonarr settings)." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Stalled Timeout" Target="STALLED_TIMEOUT" Default="3600" Mode="" Description="Time (in seconds) a download must remain stalled before actions are taken." Type="Variable" Display="always" Required="true" Mask="false">3600</Config>
+  <Config Name="Stalled Action" Target="STALLED_ACTION" Default="BLOCKLIST_AND_SEARCH" Mode="" Description="Action to perform on stalled downloads: REMOVE, BLOCKLIST, or BLOCKLIST_AND_SEARCH." Type="Variable" Display="always" Required="true" Mask="false">BLOCKLIST_AND_SEARCH</Config>
+  <Config Name="Run Interval" Target="RUN_INTERVAL" Default="300" Mode="" Description="Time (in seconds) between script executions." Type="Variable" Display="always" Required="true" Mask="false">300</Config>
+  <Config Name="Verbose Logging" Target="VERBOSE" Default="false" Mode="" Description="Enable verbose logging for debugging (true or false)." Type="Variable" Display="always" Required="true" Mask="false">false</Config>
+</Container>
