@@ -29,4 +29,5 @@
   <Config Name="Stalled Action" Target="STALLED_ACTION" Default="BLOCKLIST_AND_SEARCH" Mode="" Description="Action to perform on stalled downloads: REMOVE, BLOCKLIST, or BLOCKLIST_AND_SEARCH." Type="Variable" Display="always" Required="true" Mask="false">BLOCKLIST_AND_SEARCH</Config>
   <Config Name="Run Interval" Target="RUN_INTERVAL" Default="300" Mode="" Description="Time (in seconds) between script executions." Type="Variable" Display="always" Required="true" Mask="false">300</Config>
   <Config Name="Verbose Logging" Target="VERBOSE" Default="false" Mode="" Description="Enable verbose logging for debugging (true or false)." Type="Variable" Display="always" Required="true" Mask="false">false</Config>
+  <Config Name="Count &#xB4;Downloading Metadata&#xB4; as stalled" Target="COUNT_DOWNLOADING_METADATA_AS_STALLED" Default="false" Mode="" Description="Count the qBittorrent status of &#xB4;Downloading Metadata&#xB4; as stalled." Type="Variable" Display="always" Required="false" Mask="false">false</Config>
 </Container>
